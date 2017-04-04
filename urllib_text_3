@@ -1,0 +1,26 @@
+Python 2.7 (r27:82525, Jul  4 2010, 07:43:08) [MSC v.1500 64 bit (AMD64)] on win32
+Type "copyright", "credits" or "license()" for more information.
+>>> import urllib2
+>>> req = urllib.Request('http://www.baidai.com')
+
+Traceback (most recent call last):
+  File "<pyshell#1>", line 1, in <module>
+    req = urllib.Request('http://www.baidai.com')
+NameError: name 'urllib' is not defined
+>>> req = urllib2.Request('http://www.baidai.com')
+>>> try: urllib2.urlopen(req)
+except urllib2.URLError, e:
+	print e.reason
+
+	
+[Errno 10060] 
+>>> import urllib2
+>>> req = urllib2.Request('http://www.baidai.com')
+>>> try:
+	urllib2.urlopen(req)
+except urllib2.URLError, e:
+	print e.code
+
+	
+
+
