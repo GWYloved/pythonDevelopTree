@@ -10,7 +10,7 @@ from lxml import etree
 def StringListSave(save_path, filename, slist):
     if not os.path.exists(save_path):
         os.makedirs(save_path)
-    path = 'd:/'save_path+"/"+filename+".txt"
+    path = '/Users/yinpengcheng/Desktop/pythonDevelopTree/result'
     print path
     with open(path, "w+") as fp:
         for s in slist:
