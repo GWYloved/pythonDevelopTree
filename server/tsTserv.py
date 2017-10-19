@@ -1,21 +1,32 @@
 #!/usr/bin/env python
-# -*- coding: UTF-8 -*-
-import socket, sys
-s = socket.socket(socket.AF_INET, socket.SOCK_DGRAM)
-MAX = 65535
-PORT = 1060
-if sys.argv[1:] == ['server']:
-    s.bind(('127.0.0.1', PORT))
-    print 'Listening at', s.getsockname()
+
+from socket import *
+from time import ctime
+
+HOST = ''
+PORT = 21558
+BUFSIZ = 1024
+ADDR = (HOST, PORT)
+
+tcpSerSock = socket(AF_INET, SOCK_STREAM)
+tcpSerSock.bind(ADDR)
+tcpSerSock.listen(5)
+
+while True:
+    print 'waiting for connection....'
+    tcpCliSock, addr = tcpSerSock.accept()
+    print '...connection from:',addr
+
     while True:
-        data, address = s.recvfrom(MAX)
-        print 'The client at', address, 'says', repr(data)             
-   　　 s.sendto('Your data was %d bytes' % len(data), address)
-elif sys.argv[1:] == ['client']:
-        print 'Address before sending:', s.getsockname()
-        s.sendto('This is my message', ('127.0.0.1', PORT))
-        print 'Address after sending', s.getsockname()
-        data, address = s.recvfrom(MAX) # overly promiscuous - see text!
-        print 'The server', address, 'says', repr(data)
-else:
-    print >>sys.stderr, 'usage: udp_local.py server|client'
+        data = tcpCliSock.recv(BUFSIZ)
+        tcpCliSock.send('[%s], %s' % (ctime(), data))
+        print ctime()
+        print data
+        print '[%s], %s' % (ctime(), data)
+        if not data:
+            break
+
+
+tcpCliSock.close()
+
+tcpSerSock.close()
