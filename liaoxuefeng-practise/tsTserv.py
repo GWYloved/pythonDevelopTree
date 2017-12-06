@@ -22,6 +22,7 @@ while True:
 		if not data:
 			break;
 		tcpCliSock.send('[%s] %s' % (ctime(), data))
+		
 		tcpCliSock.close()
 
 tcpSerSock.close()
