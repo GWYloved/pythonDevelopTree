@@ -2,8 +2,7 @@
 <project version="4">
   <component name="ChangeListManager">
     <list default="true" id="86212131-3915-477b-aae5-eaacab8cd4e5" name="Default" comment="">
-      <change beforePath="$PROJECT_DIR$/Requests/request_1.py" afterPath="" />
-      <change beforePath="$PROJECT_DIR$/urllib2练习/urllib2_2.py" afterPath="$PROJECT_DIR$/urllib2练习/urllib2_2.py" />
+      <change beforePath="$PROJECT_DIR$/爬虫基础/QueenRequest.py" afterPath="$PROJECT_DIR$/爬虫基础/QueenRequest.py" />
     </list>
     <option name="EXCLUDED_CONVERTED_TO_IGNORED" value="true" />
     <option name="TRACKING_ENABLED" value="true" />
@@ -18,7 +17,7 @@
     <SUITE FILE_PATH="coverage/pythonDevelopTree$urllib2_2.coverage" NAME="urllib2_2 Coverage Results" MODIFIED="1516890084450" SOURCE_PROVIDER="com.intellij.coverage.DefaultCoverageFileProvider" RUNNER="coverage.py" COVERAGE_BY_TEST_ENABLED="true" COVERAGE_TRACING_ENABLED="false" WORKING_DIRECTORY="$PROJECT_DIR$/urllib2练习" />
     <SUITE FILE_PATH="coverage/pythonDevelopTree$ResolveSimpleUrl.coverage" NAME="ResolveSimpleUrl Coverage Results" MODIFIED="1516893004977" SOURCE_PROVIDER="com.intellij.coverage.DefaultCoverageFileProvider" RUNNER="coverage.py" COVERAGE_BY_TEST_ENABLED="true" COVERAGE_TRACING_ENABLED="false" WORKING_DIRECTORY="$PROJECT_DIR$/爬虫基础" />
     <SUITE FILE_PATH="coverage/pythonDevelopTree$hehe.coverage" NAME="hehe Coverage Results" MODIFIED="1516888811847" SOURCE_PROVIDER="com.intellij.coverage.DefaultCoverageFileProvider" RUNNER="coverage.py" COVERAGE_BY_TEST_ENABLED="true" COVERAGE_TRACING_ENABLED="false" WORKING_DIRECTORY="$PROJECT_DIR$/Requests" />
-    <SUITE FILE_PATH="coverage/pythonDevelopTree$QueenRequest.coverage" NAME="QueenRequest Coverage Results" MODIFIED="1516894173887" SOURCE_PROVIDER="com.intellij.coverage.DefaultCoverageFileProvider" RUNNER="coverage.py" COVERAGE_BY_TEST_ENABLED="true" COVERAGE_TRACING_ENABLED="false" WORKING_DIRECTORY="$PROJECT_DIR$/爬虫基础" />
+    <SUITE FILE_PATH="coverage/pythonDevelopTree$QueenRequest.coverage" NAME="QueenRequest Coverage Results" MODIFIED="1516977913842" SOURCE_PROVIDER="com.intellij.coverage.DefaultCoverageFileProvider" RUNNER="coverage.py" COVERAGE_BY_TEST_ENABLED="true" COVERAGE_TRACING_ENABLED="false" WORKING_DIRECTORY="$PROJECT_DIR$/爬虫基础" />
   </component>
   <component name="FileEditorManager">
     <leaf SIDE_TABS_SIZE_LIMIT_KEY="300">
@@ -37,8 +36,8 @@
       <file leaf-file-name="QueenRequest.py" pinned="false" current-in-tab="true">
         <entry file="file://$PROJECT_DIR$/爬虫基础/QueenRequest.py">
           <provider selected="true" editor-type-id="text-editor">
-            <state relative-caret-position="304">
-              <caret line="33" column="27" lean-forward="true" selection-start-line="33" selection-start-column="27" selection-end-line="33" selection-end-column="27" />
+            <state relative-caret-position="311">
+              <caret line="34" column="43" lean-forward="false" selection-start-line="34" selection-start-column="36" selection-end-line="34" selection-end-column="43" />
               <folding>
                 <element signature="e#0#9#0" expanded="true" />
               </folding>
@@ -77,8 +76,8 @@
     <sorting>DEFINITION_ORDER</sorting>
   </component>
   <component name="ProjectFrameBounds">
-    <option name="x" value="397" />
-    <option name="y" value="44" />
+    <option name="x" value="450" />
+    <option name="y" value="53" />
     <option name="width" value="955" />
     <option name="height" value="734" />
   </component>
@@ -273,12 +272,11 @@
     <servers />
   </component>
   <component name="ToolWindowManager">
-    <frame x="397" y="44" width="955" height="734" extended-state="0" />
-    <editor active="true" />
+    <frame x="450" y="53" width="955" height="734" extended-state="0" />
     <layout>
       <window_info id="TODO" active="false" anchor="bottom" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" show_stripe_button="true" weight="0.33" sideWeight="0.5" order="6" side_tool="false" content_ui="tabs" />
       <window_info id="Event Log" active="false" anchor="bottom" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" show_stripe_button="true" weight="0.33" sideWeight="0.5" order="7" side_tool="true" content_ui="tabs" />
-      <window_info id="Run" active="false" anchor="bottom" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="true" show_stripe_button="true" weight="0.32930514" sideWeight="0.5" order="2" side_tool="false" content_ui="tabs" />
+      <window_info id="Run" active="true" anchor="bottom" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="true" show_stripe_button="true" weight="0.32930514" sideWeight="0.5" order="2" side_tool="false" content_ui="tabs" />
       <window_info id="Version Control" active="false" anchor="bottom" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" show_stripe_button="true" weight="0.33" sideWeight="0.5" order="7" side_tool="false" content_ui="tabs" />
       <window_info id="Python Console" active="false" anchor="bottom" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" show_stripe_button="true" weight="0.33" sideWeight="0.5" order="7" side_tool="false" content_ui="tabs" />
       <window_info id="Terminal" active="false" anchor="bottom" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" show_stripe_button="true" weight="0.33" sideWeight="0.5" order="7" side_tool="false" content_ui="tabs" />
@@ -472,8 +470,8 @@
     </entry>
     <entry file="file://$PROJECT_DIR$/爬虫基础/QueenRequest.py">
       <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="304">
-          <caret line="33" column="27" lean-forward="true" selection-start-line="33" selection-start-column="27" selection-end-line="33" selection-end-column="27" />
+        <state relative-caret-position="311">
+          <caret line="34" column="43" lean-forward="false" selection-start-line="34" selection-start-column="36" selection-end-line="34" selection-end-column="43" />
           <folding>
             <element signature="e#0#9#0" expanded="true" />
           </folding>
