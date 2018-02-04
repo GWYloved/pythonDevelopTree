@@ -18,8 +18,9 @@ def save_file(this_download_url,path):
     else:   
         print "Downloading "+path+"..."
         f = urllib2.urlopen(this_download_url) 
-        data = f.read() 
-        with open(path, "wb") as code:     
+        data = f.read()
+        with open(path, "wb") as code:
+            print "loading"
             code.write(data)  
         time2=datetime.datetime.now()
         print str(time2)[:-7],
@@ -63,7 +64,7 @@ def download_the_av(url):
 
 
 
-urls=["https://www.pornhub.com/view_video.php?viewkey=ph58cc0e40991e2"]
+urls=["https://www.pornhub.com/view_video.php?viewkey=ph5a2713cd45e0b","https://www.pornhub.com/view_video.php?viewkey=ph5a4a8f3eea0af"]
 print len(urls),
 print " videos to download..."
 count=0
